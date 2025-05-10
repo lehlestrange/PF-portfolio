@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(./img/fundo-linhas.jpg);
+    background-position: center;
+    height: 100px;
+    align-items: center;
+}
+
+.imglogo{
+    width: 20%;
+ }
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.containerabout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "one two";
+    place-items: center;
+    padding: 1rem;
+}
+
+.imagemabout:nth-child(1) {
+    grid-area: one;
+}
+
+.sobremim:nth-child(2) {
+    grid-area: two;
+}
+
+.imagemabout {
+    margin: 10%;
+    
+}
+
+.sobremim {
+    text-align: center;
+    line-height: 2;
+    padding: 1rem;
+}
+ @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }}
